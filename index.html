@@ -91,6 +91,7 @@
       <p id ="counter">TotalClick:0</p>
       
       <p id="msg"></p>
+      <p id="skilllist"></p>
       <section id="skill">
         <h2>Meri Skills</h2>
         <div class="skill-box">
@@ -111,6 +112,9 @@
     </footer>
     <script>
       let count=0;
+      let skillArray=["HTML", "CSS"," JavaScript","Teaching"];
+      document.getElementById('skillList').innerText=sillArray.join(',');
+      
       function countClick(){
         count=count+1;
         document.getElementById('counter').innerText='Total clicks:'+count;
