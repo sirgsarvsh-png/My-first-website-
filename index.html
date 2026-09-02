@@ -113,9 +113,12 @@
     <script>
       let count=0;
       let skillArray=["HTML", "CSS"," JavaScript","Teaching"];
-      document.getElementById('skillList').innerText=skillArray.join(',');
-      
-      function countClick(){
+      let skillsText ="";
+      for (let i = 0;i< skillArray.length;i++){
+        skillsTeXt = skillsText + skillArray[i]+" ";
+        document.getElementById('skillList').innerText = skillText;
+      }
+      function countClick()
         count=count+1;
         document.getElementById('counter').innerText='Total clicks:'+count;
         if(count==5){
