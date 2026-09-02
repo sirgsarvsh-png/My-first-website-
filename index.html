@@ -115,10 +115,10 @@
       let skillArray=["HTML", "CSS"," JavaScript","Teaching"];
       let skillsText ="";
       for (let i = 0;i< skillArray.length;i++){
-        skillsTeXt = skillsText + skillArray[i]+" ";
-        document.getElementById('skillList').innerText = skillText;
+        skillsText = skillsText + skillArray[i]+" ";
+        document.getElementById('skillList').innerText = skillsText;
       }
-      function countClick()
+      function countClick(){
         count=count+1;
         document.getElementById('counter').innerText='Total clicks:'+count;
         if(count==5){
