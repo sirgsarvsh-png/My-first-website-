@@ -114,8 +114,17 @@
     </footer>
     <script>
       let count=0;
+      let profile= {
+        name : "sarvesh ";
+        role : "web developer ";
+        city : "Meerut"
+      };
+      document.getElementById('aboutIndo').innerText = profile.name + "-" + profile .role + "-" + profile .city;
+      
+       
+
       let skillArray=["HTML", "CSS"," JavaScript","Teaching"];
-      let skillsText ="";
+      let skillsText =""; 
       for (let i = 0;i< skillArray.length;i++){
         skillsText = skillsText + skillArray[i]+" ";
         document.getElementById('skillList').innerText = skillsText;
