@@ -110,7 +110,7 @@
       </section>
       <section id = "feedback">
         <h2>Feedback Do</h2>
-         <input type ="text" id ="userName"placeholder="Apna nam likho">
+         <input type ="text" id ="userName" placeholder="Apna nam likho">
         <button onclick = "checkForm"()">submit karo</button>
         <p id = "formMsg"></p>
       </section>
@@ -145,12 +145,14 @@
       }
       }
         function checkForm(){
-        let nameValue = document.getElementById('username').value;
+        let nameValue = document.getElementById('userName').value;
           if(nameValue == ""){
             document.getElementById('formMsg').innerText ="Bhai,Nam to likho !";
           }else{
-            document.getElementById('formMsg').innerText = "Shukriya " + nameValue + " ! ";
+            document.getElementById('formMsg').innerText = "Shukriya " + nameValue + " ! ";  
+          }
+        }
     </script>
   </body>
 </html>
-
+f
