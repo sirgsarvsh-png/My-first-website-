@@ -154,6 +154,15 @@
             document.getElementById('formMsg').innerText = "Shukriya " + nameValue + " ! ";  
           }
         }
+      function.getJoke(){
+        fetch("https://offical-joke-api-appspot.com/random_joke")
+        .then(response=
+         response.json()")
+         .then(data = {
+           console.log(data);
+      });
+      }
+           
     </script>
   </body>
 </html>
