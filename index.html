@@ -154,8 +154,8 @@
             document.getElementById('formMsg').innerText = "Shukriya " + nameValue + " ! ";  
           }
         }
-      function.getJoke(){
-        fetch("https://offical-joke-api-appspot.com/random_joke")
+      function getJoke(){
+        fetch("https://official-joke-api.appspot.com/random_joke")
         .then(response =>
          response.json()")
          .then(data => {
