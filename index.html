@@ -160,9 +160,13 @@
          response.json()")
          .then(data => {
            document.getElementById('jokeBox').innerText = data.setup +"-"+ data.punchline;
-           .catch
-      });
+           
+      })
+        .catch('error' => {
+          document.getElementById('jokeBox').innerText = "Error:" + error ;
+        });
       }
+        
            
     </script>
   </body>
