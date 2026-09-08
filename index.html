@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+thi<!DOCTYPE html>
 <html lang="hi">
   <head>
     <meta charset="utf-8">
@@ -157,12 +157,12 @@
       function getJoke(){
         fetch("https://official-joke-api.appspot.com/random_joke")
         .then(response =>
-         response.json()")
+         response.json())
          .then(data => {
            document.getElementById('jokeBox').innerText = data.setup +"-"+ data.punchline;
            
       })
-        .catch('error' => {
+        .catch(error => {
           document.getElementById('jokeBox').innerText = "Error:" + error ;
         });
       }
