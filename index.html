@@ -197,8 +197,8 @@
             document.getElementById('formMsg').innerText = "Shukriya " + nameValue + " ! ";  
           }
         }
-      function ask ai(){
-        let questions= document.getElementById('ai-input').value;
+      function askAI(){
+        let question= document.getElementById('ai-input').value;
         document.getElementById('ai-response').innerText="Soch raha hoo..,.";
         puter.ai.chat(question).then(response=>{
           document.getElementById('ai-response').innerText=response;
