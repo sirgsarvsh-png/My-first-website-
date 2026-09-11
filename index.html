@@ -217,19 +217,15 @@
           document.getElementById('ai-response').innerText=response;
         });
       }
-      function getJoke(){
-        fetch("https://official-joke-api.appspot.com/random_joke")
-        .then(response =>
-         response.json())
-         .then(data => {
-           document.getElementById('jokeBox').innerText = data.setup +"-"+ data.punchline;
-           
-      })
-        .catch(error => {
-          document.getElementById('jokeBox').innerText = "Error:" + error ;
-        });
-      }
-        
+    async function getjoke(){
+     try{
+       let response = await fetch ("https://official-joke-api.appspot.com/random_joke");
+       let data = await response .json();
+       document.getElementById('jokeBox').innerText = data.setup +"-"+ data.punchline;
+     }catch(error){
+       document.getElementById('jokeBox').innerText = "Error:" +error;
+     }
+    }
            
     </script>
   </body>
