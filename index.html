@@ -217,7 +217,7 @@
           document.getElementById('ai-response').innerText=response;
         });
       }
-    async function getjoke(){
+    async function getJoke(){
      try{
        let response = await fetch ("https://official-joke-api.appspot.com/random_joke");
        let data = await response .json();
