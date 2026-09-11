@@ -185,7 +185,8 @@
         role : "web developer ",
         city : "Meerut"
       };
-      document.getElementById('aboutInfo').innerText = `${profile.name}-${profile.role}-$[profile.city}`;
+      let {name,role,city} = profile;
+      document.getElementById('aboutInfo').innerText = `${name}-${role}-${city}`;
       
        
 
