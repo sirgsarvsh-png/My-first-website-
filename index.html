@@ -149,8 +149,11 @@
         <script>
           setTimeout(function (){
             if (typeof React==="undefined") {
-           document.getElementById('react-skill-root').innerHTML = "React loud nahi hua ";
+           document.getElementById('react-skill-root').innerHTML = "React load nahi hua ";
             } else if (typeof Babel === "undefined") {
+              document.getElementById ('react-skill-root').innerHTML ="Babel load nahi hua ";
+            }else{
+              document.getElementById('react-skill-root').innerHTML ="loaded but render fail";
       </section>
       <section id ="experience">
         <h2>mera anubhav</h2>
