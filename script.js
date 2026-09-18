@@ -1,4 +1,4 @@
-
+go
 let count = 0;
 let profile = {
   name: "sarvesh",
@@ -48,4 +48,7 @@ async function getJoke() {
   } catch (error) {
     document.getElementById('jokeBox').innerText = "Error:" + error;
   }
+}
+function toggleDarkMode (){
+  document.body.classList.toggle("dark-mode");
 }
