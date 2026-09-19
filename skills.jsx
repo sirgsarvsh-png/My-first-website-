@@ -8,13 +8,18 @@ function SkillCard({ name }) {
 function SkillBox() {
   const skills = ["HTML", "CSS", "Teaching"];
   return (
+    <div>
+    
     <ul className="skill-box">
       {skills.map((s) => (
         <SkillCard key={s} name={s} />
       ))}
     </ul>
+      <Likebutton/>
+  
+    </div>
   );
-}
+
 
 const root = ReactDOM.createRoot(document.getElementById("react-skill-root"));
 root.render(<SkillBox />);
