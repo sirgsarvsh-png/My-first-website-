@@ -1,4 +1,4 @@
-
+tu
 <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -12,7 +12,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script>alert("Js chal raha h ");</script>
+  <script>
+    setTimeout(function () {
+      if (type of React === "undefined") {
+      alert("React load NAHI hua");
+      }else if( typeofReact DOM === "undefined") {
+        alert ("ReactDOM load NAHI hua");
+      }else if (typeof Babel === "undefined") {
+        alert("Babel load NAHI hua");
+      }else{
+        alert("React+ReactDOM+Babel sab load ho gye");
+      }
+    },3000);
+  </script>
   <header>
     <script>
       window.onerror = function (msg, url, line) {
