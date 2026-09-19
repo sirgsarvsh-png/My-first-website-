@@ -44,6 +44,7 @@ function SkillBox() {
         ))}
       </ul>
       <Likebutton/>
+      <Feedback/>
     </div>
   );
 }
