@@ -15,6 +15,9 @@ function Likebutton() {
 
 function SkillBox() {
   const skills = ["HTML", "CSS", "Teaching"];
+  React.useEffect (() => {
+    cansole.log ("Skill section load ho gya!");
+  }, []);
   return (
     <div>
       <ul className="skill-box">
