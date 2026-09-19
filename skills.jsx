@@ -16,6 +16,20 @@ function Likebutton() {
     </div>
   );
 }
+function Feedback(){
+  const [name,setName] = React.useState (" ");
+  return (
+    <div>
+      <input
+        type = "text"
+  placeholder = "Apna nam likho"
+        value = {name}
+      onChange = {(e) => setName(e.target.value)}
+        />
+      <p>Namaste ,{name}</p>
+      </div>
+    );
+}
 
 function SkillBox() {
   const skills = ["HTML", "CSS", "Teaching"];
