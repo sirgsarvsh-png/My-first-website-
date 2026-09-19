@@ -19,9 +19,9 @@ function SkillBox() {
 const root = ReactDOM.createRoot(document.getElementById("react-skill-root"));
 root.render(<SkillBox />);
 function Likebutton() {
-  const [Like, Setlike] = React.useState (___);
+  const [Like, Setlike] = React.useState (0);
   return (
-    <button onClick = {() => setLikes(____)}>
+    <button onClick = {() => setLikes(likes +1)}>
        likes : {likes}
        </button>
     );
