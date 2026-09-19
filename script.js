@@ -51,7 +51,7 @@ async function getJoke() {
 }
 function toggleDarkMode (){
   document.body.classList.toggle("dark-mode");
-  if(document.body.classList contains ("dark-mode")){
+  if(document.body.classList.contains ("dark-mode")){
   document.getElementById("darkModeBtn").innerText = " Light Mode";
   }else{
     document.getElementById("darkModeBtn").innerText = "Dark Mode";
