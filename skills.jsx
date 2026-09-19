@@ -7,9 +7,13 @@ function SkillCard({ name }) {
 function Likebutton() {
   const [likes, setLikes] = React.useState(0);
   return (
+    <div>
+      
     <button onClick={() => setLikes(likes + 1)}>
       likes : {likes}
     </button>
+      { likes > 5 && <p> 🌹wah!5+ Likes!</p>}
+    </div>
   );
 }
 
