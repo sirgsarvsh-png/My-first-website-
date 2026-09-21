@@ -3,9 +3,9 @@ function SkillCard({ name }) {
     <li className="card">{name}</li>
   );
 }
+function Likebutton({likes,setLikes}) {
+  
 
-function Likebutton() {
-  const [likes, setLikes] = React.useState(0);
   return (
     <div>
       
@@ -30,6 +30,7 @@ function Feedback(){
       </div>
     );
 }
+const [likes , setLikes] = React. useState(0);
 
 function SkillBox() {
   const skills = ["HTML", "CSS", "Teaching"];
