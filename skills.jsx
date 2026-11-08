@@ -1,4 +1,4 @@
-nifunction SkillCard({ name }) {
+function SkillCard({ name }) {
   return (
     <li className="card">{name}</li>
   );
