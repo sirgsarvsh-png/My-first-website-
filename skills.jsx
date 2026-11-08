@@ -1,4 +1,4 @@
-function SkillCard({ name }) {
+nifunction SkillCard({ name }) {
   return (
     <li className="card">{name}</li>
   );
@@ -30,7 +30,7 @@ function Feedback(){
       </div>
     );
 }
-const [likes , setLikes] = React. useState(0);
+
 
 function SkillBox() {
   const skills = ["HTML", "CSS", "Teaching"];
