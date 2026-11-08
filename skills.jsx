@@ -39,12 +39,13 @@ function SkillBox() {
   }, []);
   return (
     <div>
+      <h2>Total likes:{likes}</h2>
       <ul className="skill-box">
         {skills.map((s) => (
           <SkillCard key={s} name={s} />
         ))}
       </ul>
-      <Likebutton/>
+      <Likebutton likes={likes} setlikes={setlikes}/>
       <Feedback/>
     </div>
   );
